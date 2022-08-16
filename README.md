@@ -16,13 +16,15 @@ Installing Prometheus on AWS EKS using helm:
 5. kubectl apply -f grafana.yml
 
 
-Installing filebeat on AWS EKS using ECS:
+Installing filebeat on AWS EKS using ECK:
 =========================================
+
+#  Installing ECK on EKS
 
 1. kubectl create -f https://download.elastic.co/downloads/eck/2.3.0/crds.yaml
 
 2. kubectl apply -f https://download.elastic.co/downloads/eck/2.3.0/operator.yaml
 
-#Please change the Elasticsearch/Opensearch url and credentials in the filebeat.yml file.
+#. Change the Elasticsearch/Opensearch url and credentials in the filebeat.yml file.
 
 3. kubectl apply -f filebeat.yml
